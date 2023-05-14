@@ -1,20 +1,20 @@
-'use client'
-
 import Link from 'next/link'
-import { useEffect, useRef, useState } from 'react'
 
 export default function ProgramHead() {
-  const ulRef = useRef<HTMLUListElement>(null)
+  const ulParent = document.querySelector('#ul-parent')
+  const ulLength = ulParent?.children.length || 5
 
-  const makeBold = (prop: Number) => {
-    ulRef.current!.childNodes[prop].classList.add('font-semibold')
+  const makeBold = (prop: number) => {
+    ulParent?.children[prop].classList.add('font-semibold')
   }
   const makeNotBold = () => {
-    ulRef.current?.childNodes.forEach((el) => el.classList.remove('font-semibold'))
+    for (let i = 0; i < ulLength; i++) {
+      ulParent?.children[i].classList.remove('font-semibold')
+    }
   }
 
   return (
-    <ul ref={ulRef} className="bg-gray-100 drop-shadow-lg py-4 px-8 w-56 items-center">
+    <ul id="ul-parent" className="bg-gray-100 drop-shadow-lg py-4 px-8 w-56 items-center">
       <li className="text-sm hover:font-semibold active:ring ">
         <Link
           href="/kelas-precollege"
