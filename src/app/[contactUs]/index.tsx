@@ -7,7 +7,7 @@ export default function contactUs() {
   const sendEmail = (e: any) => {
     e.preventDefault()
 
-    emailjs.sendForm('service_p2oi454', 'template_mksi9ci', form.current, 'cpDrtPw4QY1DMokN-').then(
+    emailjs.sendForm('service_p2oi454', 'template_mksi9ci', form.current!, 'cpDrtPw4QY1DMokN-').then(
       (result) => {
         console.log(result.text)
         e.target.reset()
