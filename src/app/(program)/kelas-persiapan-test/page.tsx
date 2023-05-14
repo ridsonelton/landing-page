@@ -1,5 +1,5 @@
 'use client'
-import test from 'public/test.png'
+import test from 'public/Test.png'
 import Image from 'next/image'
 
 export default function KelasPersiapan() {
