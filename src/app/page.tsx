@@ -12,6 +12,7 @@ import { useEffect, useRef, useState } from 'react'
 import ProgramHead from './(program)/programHead'
 import ContactUs from './[contactUs]'
 import socialMedia from './[socialMedia]'
+import SocialMedia from './[socialMedia]'
 
 const background = {
   backgroundImage: `url(${hero.src})`,
@@ -170,6 +171,7 @@ export default function Home() {
 
       <section className="my-9" id="contact-us">
         <ContactUs></ContactUs>
+        <SocialMedia></SocialMedia>
       </section>
     </main>
   )
