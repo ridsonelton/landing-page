@@ -1,4 +1,6 @@
-import React, { useRef } from 'react'
+'use client'
+
+import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
 
 export default function contactUs() {
