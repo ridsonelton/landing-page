@@ -16,6 +16,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       myRef.current!.classList.add('hidden')
     }
   })
+
   return (
     <div>
       <main>
@@ -35,7 +36,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                       Program
                     </li>
                     <li className="mx-2  hover:bg-red-950 rounded-full p-2 transition cursor-pointer hover:text-white ">
-                      <Link href="/contactUs">Contact Us</Link>{' '}
+                      <Link href="/#contact-us">Contact Us</Link>
                     </li>
                   </ul>
                 </div>
