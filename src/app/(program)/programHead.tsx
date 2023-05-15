@@ -1,21 +1,29 @@
 import Link from 'next/link'
+import { useEffect, useRef } from 'react'
 
 export default function ProgramHead() {
-  const ulParent = document.querySelector('#ul-parent')
-  const ulLength = ulParent?.children.length || 5
+  const ul = useRef<HTMLDivElement>(null)
+  // const ulParent = document.querySelectorAll('#ul-parent')
+  // const ulLength = ulParent?.children.length || 5
+  const ulParent = ul.current
+  const ulLength = ul.current?.children.length || 5
 
   const makeBold = (prop: number) => {
     ulParent?.children[prop].classList.add('font-semibold')
   }
+
   const makeNotBold = () => {
     for (let i = 0; i < ulLength; i++) {
       ulParent?.children[i].classList.remove('font-semibold')
     }
   }
+  useEffect(() => {
+    console.log(ulLength)
+  })
 
   return (
-    <ul id="ul-parent" className="bg-gray-100 drop-shadow-lg py-4 px-8 w-56 items-center">
-      <li className="text-sm hover:font-semibold active:ring ">
+    <div id="ul-parent" ref={ul} className="bg-gray-100 drop-shadow-lg py-4 px-8 w-56 items-center">
+      <div className="text-sm hover:font-semibold active:ring ">
         <Link
           href="/kelas-precollege"
           onClick={() => {
@@ -25,8 +33,8 @@ export default function ProgramHead() {
         >
           Kelas Precollege
         </Link>
-      </li>
-      <li className="text-sm hover:font-semibold active:ring">
+      </div>
+      <div className="text-sm hover:font-semibold active:ring">
         <Link
           href="/kelas-persiapan-test"
           onClick={() => {
@@ -36,8 +44,8 @@ export default function ProgramHead() {
         >
           Kelas Persiapan Test
         </Link>
-      </li>
-      <li className="text-sm hover:font-semibold active:ring">
+      </div>
+      <div className="text-sm hover:font-semibold active:ring">
         <Link
           href="/kelas-partnership"
           onClick={() => {
@@ -47,8 +55,8 @@ export default function ProgramHead() {
         >
           Kelas Partnership
         </Link>
-      </li>
-      <li className="text-sm hover:font-semibold active:ring">
+      </div>
+      <div className="text-sm hover:font-semibold active:ring">
         <Link
           href="/kelas-beasiswa"
           onClick={() => {
@@ -58,8 +66,8 @@ export default function ProgramHead() {
         >
           Kelas Beasiswa
         </Link>
-      </li>
-      <li className="text-sm hover:font-semibold active:ring">
+      </div>
+      <div className="text-sm hover:font-semibold active:ring">
         <Link
           href="/kelas-dasar"
           onClick={() => {
@@ -69,7 +77,7 @@ export default function ProgramHead() {
         >
           Kelas Dasar
         </Link>
-      </li>
-    </ul>
+      </div>
+    </div>
   )
 }

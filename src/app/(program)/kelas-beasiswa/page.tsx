@@ -14,7 +14,7 @@ export default function KelasBeasiswa() {
         </p>
         <p>Kelas Orientasi ini diselenggarakan 2X dalam seminggu (2 jam/pertemuan) dgn total masa belajar 1.5 bulan (14 kali pertemuan, sekitar 28 jam) . </p>
         <br />
-        <p>
+        <div>
           <span className="font-semibold">Syarat Peserta :</span>
           <br />
           <ul className="list-disc">
@@ -25,7 +25,7 @@ export default function KelasBeasiswa() {
             <li>Memiliki SIM C.</li>
             <li>Bersedia bekerja paruh waktu sbg distributor koran selama belajar sekolah bahasa.</li>
           </ul>
-        </p>
+        </div>
         <br />
         <h4 className="font-semibold">Proses</h4>
         <Image src={yomiuri} width={1000} height={1000} alt="yomiuri"></Image>
