@@ -22,6 +22,7 @@ const background = {
 
 export default function Home() {
   const { ref: headTask, inView: headOn } = useInView()
+  const { ref: headTask1, inView: headOn1 } = useInView()
   const myRef = useRef<HTMLDivElement>(null)
   const [show, setShow] = useState(false)
   useEffect(() => {
@@ -31,15 +32,16 @@ export default function Home() {
       myRef.current!.classList.add('hidden')
     }
   })
+
   return (
     <main>
       <nav className="flex justify-center z-10 fixed left-[50vw] ">
-        <div className={`transition duration-700 delay-75 fixed left-0 right-0  bg-gradient-to-b from-gray-700 to-transparent  ${headOn ? 'bg-red-900 text-black bg-none' : ''}`}>
+        <div className={`transition duration-700 delay-75 fixed left-0 right-0  bg-gradient-to-b from-gray-700 to-transparent  ${headOn ? 'bg-red-900 text-black bg-none' : ''} ${headOn1 ? 'bg-red-900 text-black bg-none' : ''}`}>
           <div className="flex justify-center bg-red-900 bg-opacity-0">
             <Image src={logoB} alt="smjc" width={55} className="" />
           </div>
-          <div className={`transition duration-700 font-medium text-white drop-shadow-lg ${headOn ? 'bg-gray-200' : ''}`}>
-            <ul className={`flex justify-center ${headOn ? 'text-black' : ''}`}>
+          <div className={`transition duration-700 font-medium text-white drop-shadow-lg ${headOn ? 'bg-gray-200' : ''} ${headOn1 ? 'bg-gray-200' : ''}`}>
+            <ul className={`flex justify-center ${headOn ? 'text-black' : ''}  ${headOn1 ? 'text-black' : ''}`}>
               <li className="mx-2  hover:bg-red-950 rounded-full p-2 transition cursor-pointer hover:text-white ">Home</li>
               <li className="mx-2  hover:bg-red-950 rounded-full p-2 transition cursor-pointer hover:text-white " onMouseEnter={() => setShow(true)} onMouseLeave={() => setShow(false)}>
                 Program
@@ -171,6 +173,7 @@ export default function Home() {
 
       <section className="my-9" id="contact-us">
         <ContactUs></ContactUs>
+        <div ref={headTask1}></div>
         <SocialMedia></SocialMedia>
       </section>
     </main>

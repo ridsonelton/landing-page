@@ -31,15 +31,15 @@ export default function ContactUs() {
           <label htmlFor="user_name" className="font-semibold text-lg">
             Nama
           </label>
-          <input className="" type="text" name="user_name" placeholder="your name" />
+          <input className="rounded-md px-3 mb-3" type="text" name="user_name" placeholder="your name" />
           <label htmlFor="user_email" className="font-semibold text-lg">
             Email
           </label>
-          <input className="" type="email" name="user_email" placeholder="your email" />
+          <input className="rounded-md px-3 mb-3" type="email" name="user_email" placeholder="your email" />
           <label htmlFor="message" className="font-semibold text-lg">
             Message
           </label>
-          <textarea name="message" cols={50} rows={10} />
+          <textarea className="rounded-md mb-3" name="message" cols={50} rows={10} />
           <input className="cursor-pointer rounded-lg bg bg-red-400 w-36 text-center mx-auto my-6" type="submit" value="Send" />
         </form>
       </div>
