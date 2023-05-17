@@ -13,7 +13,7 @@ export default function KelasPersiapan() {
           Kelas ini lebih konsentrasi pada bimbingan latihan soal-soal test bahasa Jepang.
         </p>
         <br />
-        <p>Kelas diselenggarakan 3 kali dalam 1 minggu (2 jam/pertemuan) dgn total masa belajar 2 bulan (sekitar 68~70 jam) .</p>
+        <p>Kelas diselenggarakan 3 kali dalam 1 minggu (2 jam/pertemuan) dgn total masa belajar 2 bulan (sekitar 68~70 jam)</p>
         <br />
         <p>
           <span className="font-semibold">Syarat Peserta :</span>

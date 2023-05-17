@@ -2,6 +2,7 @@
 import down from 'public/down.svg'
 import Image from 'next/image'
 import DPrecollege from 'public/precollege.png'
+import Link from 'next/link'
 
 export default function KelasPrecollege() {
   return (
@@ -37,8 +38,12 @@ export default function KelasPrecollege() {
           waktu setelah di Jepang.
         </p>
         <div className="flex justify-center my-4">
-          <button className="cursor-pointer mx-4 bg-blue-950 rounded-md px-3 text-yellow-300">Biaya</button>
-          <button className="cursor-pointer mx-4 bg-blue-950 rounded-md px-3 text-yellow-300">Dokumen yang dibutuhkan</button>
+          <Link href="/biaya">
+            <button className="cursor-pointer mx-4 bg-blue-950 rounded-md px-3 text-yellow-300">Biaya</button>
+          </Link>
+          <Link href="/dokumen">
+            <button className="cursor-pointer mx-4 bg-blue-950 rounded-md px-3 text-yellow-300">Dokumen yang dibutuhkan</button>
+          </Link>
         </div>
       </div>
     </section>

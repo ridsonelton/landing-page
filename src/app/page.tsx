@@ -83,8 +83,7 @@ export default function Home() {
           <Fade direction="left" triggerOnce>
             <div className=" my-4">
               <h1 className="text-center text-4xl font-bold">
-                {' '}
-                <span className="drop-shadow-lg shadow-gray-900 text-5xl">SMJC</span>{' '}
+                <span className="drop-shadow-lg shadow-gray-900 text-5xl">SMJC</span>
               </h1>
               <p className="text-sm text-red-400">(Shizuoka Makassar Japanese Center)</p>
             </div>

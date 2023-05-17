@@ -13,7 +13,7 @@ export default function KelasPartnership() {
           kuliah di Jepang), Program Beasiswa atau program lainnya.
         </p>
         <br />
-        <p>Kelas diselenggarakan 1X dalam seminggu (2 jam/pertemuan) dgn total masa belajar 12 bulan (sekitar 126 jam) .</p>
+        <p>Kelas diselenggarakan 2 kali dalam 1 minggu (2 jam/pertemuan) dgn total masa belajar 10 bulan (80 pertemuan, sekitar 160 jam).</p>
         <br />
         <p>
           <span className="font-semibold">Syarat Peserta :</span> <br />
