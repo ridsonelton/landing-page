@@ -17,9 +17,6 @@ export default function ProgramHead() {
       ulParent?.children[i].classList.remove('font-semibold')
     }
   }
-  useEffect(() => {
-    console.log(ulLength)
-  })
 
   return (
     <div id="ul-parent" ref={ul} className="bg-gray-100 drop-shadow-lg py-4 px-8 w-56 items-center">

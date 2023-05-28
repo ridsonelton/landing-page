@@ -52,7 +52,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           </section>
         </div>
       </main>
-      <div className="container mx-auto">{children}</div>
+      <div className="w-full mx-auto">{children}</div>
     </div>
   )
 }
