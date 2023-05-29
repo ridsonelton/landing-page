@@ -6,7 +6,7 @@ export default function KelasBeasiswa() {
   return (
     <div>
       <section className="">
-        <div className="my-14 relative mx-auto container">
+        <div className="my-14 relative mx-auto container px-4 sm:px-0">
           <h1 className="font-bold text-2xl my-4 ">Kelas Orientasi Bea Siswa</h1>
           <p className="my-3">
             Kelas pembekalan/orientasi bagi para siswa/mahasiswa yang terpilih sebagai penerima beasiswa dari Yomiuri Shinbun (perusahaan koran terkemuka di Jepang). Bea siswa mencover biaya pendidikan selama belajar/kuliah di Jepang dalam
@@ -19,7 +19,7 @@ export default function KelasBeasiswa() {
           <div>
             <span className="font-semibold">Syarat Peserta :</span>
             <br />
-            <ul className="list-disc">
+            <ul className="list-disc list-inside">
               <li> Lulus seleksi berkas dalam SMJC (Tamat SMA/AKADEMI/UNIVERSITAS).</li>
               <li> Memiliki kemampuan bahasa Jepang Level N4 keatas.</li>
               <li> Mampu berkomunikasi dasar dalam bahasa Jepang.</li>
@@ -34,9 +34,9 @@ export default function KelasBeasiswa() {
         </div>
       </section>
       <section className="py-4 bg-slate-200 w-full">
-        <div className="container mx-14">
+        <div className="container px-4 sm:px-0 mx-auto">
           <h6 className="font-semibold my-2">Dokumen yang dibutuhkan :</h6>
-          <ul className="list-disc">
+          <ul className="list-disc list-inside">
             <li>Entry sheet SMJC(Via Website)</li>
             <li>Pas Foto Terbaru ( 3 Bulan Terakhir)</li>
             <li>KTP/Kartu Pelajar</li>

@@ -6,7 +6,7 @@ export default function KelasPartnership() {
   return (
     <div>
       <section className="">
-        <div className="my-14 relative mx-auto container">
+        <div className="my-14 relative mx-auto container p-4 sm:p-0">
           <h1 className="font-bold text-2xl my-4 "> Kelas Partnership (SMA/Akademi/Universitas)</h1>
           <p> Merupakan kelas tambahan bahasa Jepang dalam sekolah atau mata kuliah pilihan dalam kampus. Pelaksanaannya hanya pada institusi pendidikan yang telah memiliki kerja sama (MoU) dengan SMJC.</p>
           <p>
@@ -31,17 +31,17 @@ export default function KelasPartnership() {
       </section>
 
       <section className="py-4 bg-slate-200 w-full">
-        <div className="container mx-14">
+        <div className="container mx-auto px-4 sm:px-0">
           <h6 className="font-semibold my-2">Dokumen yang dibutuhkan(tingkat SMA) :</h6>
-          <ul className="list-disc">
+          <ul className="list-disc list-inside">
             <li>Entry sheet SMJC　(Via Website)</li>
             <li>Pas Foto Terbaru ( 3 Bulan Terakhir)</li>
             <li>KTP/Kartu Pelajar</li>
           </ul>
         </div>
-        <div className="container mx-14">
+        <div className="container mx-auto px-4 sm:px-0">
           <h6 className="font-semibold my-2">Dokumen yang dibutuhkan(tingkat Universitas/lanjut kuliah ke Jepang) :</h6>
-          <ul className="list-disc">
+          <ul className="list-disc list-inside">
             <li>Entry sheet SMJC　(Via Website)</li>
             <li>Pas Foto Terbaru ( 3 Bulan Terakhir)</li>
             <li>KTP/Kartu Pelajar</li>

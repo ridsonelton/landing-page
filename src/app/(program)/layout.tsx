@@ -18,8 +18,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   })
 
   return (
-    <div>
-      <main>
+    <div className="min-w-full overflow-hidden">
+      <div>
         <div className="">
           <section>
             <div className="flex justify-center ">
@@ -51,7 +51,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             </div>
           </section>
         </div>
-      </main>
+      </div>
       <div className="w-full mx-auto">{children}</div>
     </div>
   )

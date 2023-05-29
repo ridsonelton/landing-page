@@ -15,6 +15,7 @@ import SocialMedia from './[socialMedia]'
 import Globe from 'public/globe.svg'
 import Consult from 'public/consult.svg'
 import Study from 'public/study.svg'
+import { NewsComponent } from './components/news'
 
 const background = {
   backgroundImage: `url(${hero.src})`,
@@ -82,29 +83,7 @@ export default function Home() {
         </section>
       </ParallaxProvider>
 
-      <section className="container mx-auto my-9 text-center ">
-        <div className="">
-          <h2 className="text-3xl font-bold">News</h2>
-          <ul className=" flex flex-col justify-center items-center">
-            <li className="flex gap-2 items-center  px-6 py-2 cursor-pointer hover:bg-red-100">
-              <span className="font-semibold">2023.05.25</span>
-              <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, omnis!</span>{' '}
-            </li>
-            <li className="flex gap-2 items-center  px-6 py-2 cursor-pointer hover:bg-red-100">
-              <span className="font-semibold">2023.05.25</span>
-              <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, omnis!</span>{' '}
-            </li>
-            <li className="flex gap-2 items-center  px-6 py-2 cursor-pointer hover:bg-red-100">
-              <span className="font-semibold">2023.05.25</span>
-              <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, omnis!</span>{' '}
-            </li>
-            <li className="flex gap-2 items-center  px-6 py-2 cursor-pointer hover:bg-red-100">
-              <span className="font-semibold">2023.05.25</span>
-              <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, omnis!</span>{' '}
-            </li>
-          </ul>
-        </div>
-      </section>
+      <NewsComponent></NewsComponent>
       <section className="bg-gray-200">
         <div className="container mx-auto py-9 text-center">
           <div className={`transition duration-1000 `}>
@@ -126,23 +105,23 @@ export default function Home() {
       </section>
 
       <div ref={headTask}>
-        <section className=" bg-gray-300">
+        <section className="">
           <div className="container mx-auto py-9 text-center">
             <Fade direction="right" triggerOnce>
               <h1 className="text-center text-4xl font-bold my-4">VISI DAN MISI</h1>
               <div className="flex  justify-center">
                 <ul className="text-start md:flex justify-center flex-wrap gap-3 items-start ">
                   <li className=" flex items-center flex-col justify-center basis-1/4 my-4">
-                    <Image src={Globe} height={50} alt="globe"></Image>
+                    <Image src={Globe} height={100} alt="globe"></Image>
                     <p className="text-center">Membuka satu lagi jendela dunia lewat bahasa Jepang.</p>
                   </li>
 
                   <li className=" flex items-center flex-col justify-center basis-1/4 my-4">
-                    <Image src={Study} height={50} alt="globe"></Image>
+                    <Image src={Study} height={100} alt="globe"></Image>
                     <p className="text-center">Mempersiapkan pelajar untuk lanjut kuliah dan selanjutnya bekerja di Jepang.</p>
                   </li>
                   <li className=" flex items-center flex-col justify-center basis-1/4  my-4">
-                    <Image src={Consult} height={50} alt="globe"></Image>
+                    <Image src={Consult} height={100} alt="globe"></Image>
                     <p className="text-center">Membimbing/mensupport pelajar agar cepat beradaptasi di Jepang.</p>
                   </li>
                 </ul>

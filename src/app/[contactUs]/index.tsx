@@ -23,11 +23,11 @@ export default function ContactUs() {
   }
   return (
     <div className="container mx-auto">
-      <div className="w">
+      <div className="">
         <h1 className="text-center text-4xl font-bold">Contact Us</h1>
       </div>
       <div className="flex justify-center">
-        <form ref={form} onSubmit={sendEmail} action="" className="flex flex-col mt-3 md:w-[50vw] sm:w-full">
+        <form ref={form} onSubmit={sendEmail} action="" className="flex flex-col mt-3 md:w-[50vw] w-[80vw]">
           <label htmlFor="user_name" className="font-semibold text-lg">
             Nama
           </label>

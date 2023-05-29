@@ -6,7 +6,7 @@ export default function KelasDasar() {
   return (
     <div>
       <section className="">
-        <div className="my-14 relative mx-auto container">
+        <div className="my-14 relative mx-auto container px-4 sm:px-0">
           <h1 className="font-bold text-2xl my-4 ">Kelas Reguler Bahasa Jepang</h1>
           <p>Kelas pembelajaran bahasa Jepang dasar yang diperuntukkan untuk umum, tidak ada batasan umur, bagi pelajar/pegawai/karyawan/profesional atau siapa saja yang tertarik mempelajari bahasa Jepang. </p>
           <br />
@@ -28,10 +28,10 @@ export default function KelasDasar() {
         </div>
       </section>
 
-      <section className="mx-auto bg-slate-200 w-full">
-        <div className="container mx-14">
+      <section className="mx-auto bg-slate-200 w-full py-4">
+        <div className="container mx-auto px-4 sm:px-0">
           <h6 className="font-semibold my-2">Dokumen yang dibutuhkan :</h6>
-          <ul className="list-disc">
+          <ul className="list-disc list-inside">
             <li>Entry sheet SMJC　(Via Website)</li>
             <li>Pas Foto (3 bulan terakhir)</li>
             <li>Application Sheet</li>

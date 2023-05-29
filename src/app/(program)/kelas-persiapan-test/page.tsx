@@ -7,7 +7,7 @@ export default function KelasPersiapan() {
   return (
     <div>
       <section className="">
-        <div className="my-14 relative container mx-auto">
+        <div className="my-14 relative container mx-auto p-4 sm:p-0">
           <h1 className="font-bold text-2xl my-4 ">Kelas Persiapan test kemampuan Bahasa Jepang (N5/N4/N3) (1~3 bulan)</h1>
           <p>
             Merupakan kelas persiapan bahasa Jepang agar dapat lulus dalam test kemampuan bahasa Jepang (能力試験) level N5, N4, N3.
@@ -27,21 +27,21 @@ export default function KelasPersiapan() {
         </div>
       </section>
 
-      <section className="mx-auto bg-slate-200 w-full">
-        <div className="container mx-14">
+      <section className="bg-slate-200 w-full py-4">
+        <div className="container mx-auto p-4 sm:p-0">
           <h6 className="font-semibold my-2">Dokumen yang dibutuhkan :</h6>
-          <ul className="list-disc">
+          <ul className="list-disc list-inside">
             <li>Entry sheet SMJC　(Via Website)</li>
             <li>Pas Foto (3 bulan terakhir)</li>
             <li>Application Sheet</li>
             <li>KTP & Kartu Pelajar</li>
           </ul>
-        </div>
 
-        <div className="flex gap-7 justify-center my-3 flex-wrap">
-          <PriceCard title={'N5'} price={'1,600'} pertemuan={'10X pertemuan'} li1={'2-5X per-minggu'} li2={' 60 Menit/pertemuan'} li3={'Tersedia kelas Online & Offline'}></PriceCard>
-          <PriceCard title={'N4'} price={'1,800'} pertemuan={'10X pertemuan'} li1={'2-5X per-minggu'} li2={' 60 Menit/pertemuan'} li3={'Tersedia kelas Online & Offline'}></PriceCard>
-          <PriceCard title={'N3'} price={'2,200'} pertemuan={'10X pertemuan'} li1={'2-5X per-minggu'} li2={' 60 Menit/pertemuan'} li3={'Tersedia kelas Online & Offline'}></PriceCard>
+          <div className="flex gap-7 justify-center py-3 flex-wrap">
+            <PriceCard title={'N5'} price={'1,600'} pertemuan={'10X pertemuan'} li1={'2-5X per-minggu'} li2={' 60 Menit/pertemuan'} li3={'Tersedia kelas Online & Offline'}></PriceCard>
+            <PriceCard title={'N4'} price={'1,800'} pertemuan={'10X pertemuan'} li1={'2-5X per-minggu'} li2={' 60 Menit/pertemuan'} li3={'Tersedia kelas Online & Offline'}></PriceCard>
+            <PriceCard title={'N3'} price={'2,200'} pertemuan={'10X pertemuan'} li1={'2-5X per-minggu'} li2={' 60 Menit/pertemuan'} li3={'Tersedia kelas Online & Offline'}></PriceCard>
+          </div>
         </div>
       </section>
     </div>
