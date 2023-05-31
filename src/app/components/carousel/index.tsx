@@ -27,7 +27,7 @@ export default function Carousel() {
       grabCursor={true}
       centeredSlides={true}
       loop={true}
-      slidesPerView={3}
+      slidesPerView={2}
       coverflowEffect={{
         rotate: 0,
         stretch: 0,
@@ -41,22 +41,22 @@ export default function Carousel() {
       className="swiper-container"
     >
       <SwiperSlide>
-        <img className="rounded-xl shadow-md shadow-gray-500 w-[80vw]" src={images.img1} width="100%" alt="book"></img>
+        <img className="rounded-xl shadow-md shadow-gray-500 w-[50vw]" src={images.img1} width="80%" alt="book"></img>
       </SwiperSlide>
       <SwiperSlide>
-        <img className="rounded-xl shadow-md shadow-gray-500 w-[80vw]" src={images.img2} width="100%" alt="book"></img>
+        <img className="rounded-xl shadow-md shadow-gray-500 w-[50vw]" src={images.img2} width="80%" alt="book"></img>
       </SwiperSlide>
       <SwiperSlide>
-        <img className="rounded-xl shadow-md shadow-gray-500 w-[80vw]" src={images.img3} width="100%" alt="book"></img>
+        <img className="rounded-xl shadow-md shadow-gray-500 w-[50vw]" src={images.img3} width="80%" alt="book"></img>
       </SwiperSlide>
       <SwiperSlide>
-        <img className="rounded-xl shadow-md shadow-gray-500 w-[80vw]" src={images.img4} width="100%" alt="book"></img>
+        <img className="rounded-xl shadow-md shadow-gray-500 w-[50vw]" src={images.img4} width="80%" alt="book"></img>
       </SwiperSlide>
       <SwiperSlide>
-        <img className="rounded-xl shadow-md shadow-gray-500 w-[80vw]" src={images.img5} width="100%" alt="book"></img>
+        <img className="rounded-xl shadow-md shadow-gray-500 w-[50vw]" src={images.img5} width="80%" alt="book"></img>
       </SwiperSlide>
       <SwiperSlide>
-        <img className="rounded-xl shadow-md shadow-gray-500 w-[80vw]" src={images.img6} width="100%" alt="book"></img>
+        <img className="rounded-xl shadow-md shadow-gray-500 w-[50vw]" src={images.img6} width="80%" alt="book"></img>
       </SwiperSlide>
 
       <div className="slider-controler">

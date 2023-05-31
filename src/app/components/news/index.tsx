@@ -6,7 +6,7 @@ export function NewsComponent() {
         <ul className="justify-items-center grid md:grid-cols-3 grid-cols-1 my-3 gap-4 justify-stretch">
           <li className=" cursor-pointer w-[90vw] md:w-[27vw] lg:w-[22vw] text-sm md:text-base h-min overflow-hidden  rounded-xl hover:opacity-50 shadow-lg shadow-gray-400 hover:scale-105">
             <div>
-              <img className="h-52" src="https://source.unsplash.com/500x300?book" alt="" width="100%" />
+              <img className="h-52" src="https://source.unsplash.com/500x300?eraser" alt="" width="100%" />
             </div>
             <div className="flex ">
               <div className="bg-red-700  p-2 justify-center items-center flex">
@@ -19,7 +19,7 @@ export function NewsComponent() {
           </li>
           <li className="cursor-pointer w-[90vw] md:w-[27vw] lg:w-[22vw] text-sm md:text-base h-min overflow-hidden  rounded-xl hover:opacity-50 shadow-lg shadow-gray-400 hover:scale-105">
             <div>
-              <img className="h-52" src="https://source.unsplash.com/500x300?book" alt="" width="100%" />
+              <img className="h-52" src="https://source.unsplash.com/500x300?pencil" alt="" width="100%" />
             </div>
             <div className="flex ">
               <div className="bg-red-700  p-2 justify-center items-center flex">
