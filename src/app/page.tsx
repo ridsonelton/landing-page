@@ -171,7 +171,6 @@ export default function Home() {
           <ContactUs></ContactUs>
           <div></div>
           <SocialMedia></SocialMedia>
-          <IonIcon name="arrow-forward-outline" size="large" className="text-red-900 h-10"></IonIcon>
         </section>
       </div>
     </main>

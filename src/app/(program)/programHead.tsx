@@ -1,7 +1,10 @@
 import Link from 'next/link'
-import { useEffect, useRef } from 'react'
+import { useContext, useEffect, useRef } from 'react'
+import { HeaderContext } from './layout'
 
 export default function ProgramHead() {
+  const header = useContext(HeaderContext)
+
   const ul = useRef<HTMLDivElement>(null)
   // const ulParent = document.querySelectorAll('#ul-parent')
   // const ulLength = ulParent?.children.length || 5

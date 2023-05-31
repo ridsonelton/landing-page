@@ -10,9 +10,6 @@ export default function Footer() {
           <p className="text-gray-400">made by ERU</p>
         </div>
       </div>
-      <div className="w-2 bg-white">
-        <i className="fa-solid fa-arrow-right"></i>
-      </div>
     </section>
   )
 }
