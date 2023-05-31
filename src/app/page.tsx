@@ -17,7 +17,8 @@ import Globe from 'public/globe.svg'
 import Consult from 'public/consult.svg'
 import Study from 'public/study.svg'
 import { NewsComponent } from './components/news'
-
+import Header from './components/Header'
+import { IonIcon } from '@ionic/react'
 const background = {
   backgroundImage: `url(${hero.src})`,
   height: '100vh',
@@ -26,57 +27,12 @@ const background = {
 
 export default function Home() {
   const { ref: headTask, inView: headOn } = useInView()
-  const { ref: headTask1, inView: headOn1 } = useInView()
-  const myRef = useRef<HTMLDivElement>(null)
-  const [show, setShow] = useState(false)
-  useEffect(() => {
-    if (show === true) {
-      myRef.current!.classList.remove('hidden')
-    } else {
-      myRef.current!.classList.add('hidden')
-    }
-  })
 
   return (
     <main>
-      <nav className=" justify-center z-10 fixed left-[50vw] flex">
-        <div
-          className={`hidden sm:block transition duration-700 delay-75 fixed left-0 right-0 bg-gradient-to-b from-gray-700 to-transparent  ${headOn ? 'bg-red-900 text-black bg-none' : ''} ${headOn1 ? 'bg-red-900 text-black bg-none' : ''}`}
-        >
-          <div className="flex justify-center bg-red-900 bg-opacity-0">
-            <Image src={logoB} alt="smjc" width={55} className="" />
-          </div>
-          <div className={`transition duration-700 font-medium text-white drop-shadow-lg ${headOn ? 'bg-gray-200' : ''} ${headOn1 ? 'bg-gray-200' : ''}`}>
-            <ul className={`flex justify-center ${headOn ? 'text-black' : ''}  ${headOn1 ? 'text-black' : ''}`}>
-              <li className="mx-2  hover:bg-red-950 rounded-full p-2 transition cursor-pointer hover:text-white ">
-                <Link href="#">Home</Link>
-              </li>
-              <li className="mx-2  hover:bg-red-950 rounded-full p-2 transition cursor-pointer hover:text-white " onMouseEnter={() => setShow(true)} onMouseLeave={() => setShow(false)}>
-                Program
-              </li>
-              <li className="mx-2  hover:bg-red-950 rounded-full p-2 transition cursor-pointer hover:text-white ">
-                <Link href="#contact-us">Contact Us</Link>
-              </li>
-            </ul>
-          </div>
-          <div ref={myRef} className="relative hidden" onMouseEnter={() => setShow(true)} onMouseLeave={() => setShow(false)}>
-            <div className="absolute z-10 right-0 left-0 ml-3">
-              <div className="flex justify-center">
-                <ProgramHead></ProgramHead>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="sm:hidden block bg-gray-800 py-2 fixed left-0 right-0 top-0">
-          <div className="flex justify-between px-4 items-center">
-            <Image src={logoA} alt="smjc" width={40} className="" />
-            <div className="text-white text-2xl hover:-rotate-90 transition">X</div>
-          </div>
-        </div>
-      </nav>
-
+      <Header headOn={headOn}></Header>
       <ParallaxProvider scrollAxis="vertical">
-        <section className="bg-center bg-cover bg-fixed z-0 relative" style={background}>
+        <section ref={headTask} id="home" className="bg-center bg-cover bg-fixed z-0 relative" style={background}>
           <div className="flex justify-center absolute top-0 bottom-0 left-0 right-0 ">
             <div className={`w-96 flex items-center transition duration-700 delay-300 scale-100 `}>
               <div>
@@ -93,6 +49,7 @@ export default function Home() {
       </ParallaxProvider>
 
       <NewsComponent></NewsComponent>
+
       <section className="bg-gray-200">
         <div className="container mx-auto py-9 text-center">
           <div className={`transition duration-1000 `}>
@@ -113,7 +70,7 @@ export default function Home() {
         </div>
       </section>
 
-      <div ref={headTask}>
+      <div>
         <section className="">
           <div className="container mx-auto py-9 text-center">
             <Fade direction="right" triggerOnce>
@@ -140,7 +97,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="bg-gray-200 p-4 sm:p-0">
+        <section className="bg-gray-200 p-4 sm:px-4">
           <div className="container mx-auto py-9 text-center md:divide-y divide-gray-400 ">
             <Fade direction="left" triggerOnce>
               <h1 className="text-center text-4xl font-bold my-4">
@@ -154,23 +111,29 @@ export default function Home() {
                   <li className=" my-3 lg:basis-1/4 p-4 hover:cursor-pointer hover:bg-opacity-0 bg-slate-900 text-white hover:text-black transition duration-300 rounded-xl shadow-lg group">
                     <h4 className="font-bold text-2xl">Kelas Intensif </h4>
                     <p className="text-gray-300 group-hover:text-gray-600 ">Persiapan lanjut kuliah ke Jepang</p>
-                    <Link href="/kelas-persiapan-test" className="rounded-lg px-2 text-red-600 outline outline-1 mr-4 hover:bg-red-900 outline-red-900 hover:text-white  transition duration-500   ">
-                      Detail Program
-                    </Link>
+                    <div className="flex justify-center">
+                      <Link href="/kelas-precollege">
+                        <p className="rounded-lg px-2 text-red-600 border-2 border-red-900 mr-4 hover:bg-red-900  hover:text-white  transition duration-500 hover:scale-105 w-max text-center ">Detail Program</p>
+                      </Link>
+                    </div>
                   </li>
                   <li className=" my-3 lg:basis-1/4 p-4 hover:cursor-pointer hover:bg-opacity-0 bg-slate-900 text-white hover:text-black transition duration-300 rounded-xl shadow-lg group">
                     <h4 className="font-bold text-2xl">Kelas JLPT/NAT </h4>
                     <p className="text-gray-300 group-hover:text-gray-600 ">Persiapan test kemampuan bahasa</p>
-                    <Link href="/kelas-persiapan-test" className="rounded-lg px-2 text-red-600 outline outline-1 mr-4 hover:bg-red-900 outline-red-900 hover:text-white  transition duration-500   ">
-                      Detail Program
-                    </Link>
+                    <div className="flex justify-center">
+                      <Link href="/kelas-persiapan-test">
+                        <p className="rounded-lg px-2 text-red-600 border-2 border-red-900 mr-4 hover:bg-red-900  hover:text-white  transition duration-500 hover:scale-105 w-max text-center ">Detail Program</p>
+                      </Link>
+                    </div>
                   </li>
                   <li className=" my-3 lg:basis-1/4 p-4 hover:cursor-pointer hover:bg-opacity-0 bg-slate-900 text-white hover:text-black transition duration-300 rounded-xl shadow-lg group">
                     <h4 className="font-bold text-2xl">Kelas Partnership</h4>
                     <p className="text-gray-300 group-hover:text-gray-600">Bahasa Jepang dalam sekolah atau kampus</p>
-                    <Link href="/kelas-partnership" className="rounded-lg px-2 text-red-600 outline outline-1 mr-4 hover:bg-red-900 outline-red-900  hover:text-white  transition duration-500  ">
-                      Detail Program
-                    </Link>
+                    <div className="flex justify-center">
+                      <Link href="/kelas-partnership">
+                        <p className="rounded-lg px-2 text-red-600 border-2 border-red-900 mr-4 hover:bg-red-900  hover:text-white  transition duration-500 hover:scale-105 w-max text-center ">Detail Program</p>
+                      </Link>
+                    </div>
                   </li>
                 </ul>
 
@@ -178,16 +141,20 @@ export default function Home() {
                   <li className=" my-3 lg:basis-1/4   p-4 hover:cursor-pointer hover:bg-opacity-0 bg-slate-900 text-white hover:text-black transition duration-300 rounded-xl shadow-lg group">
                     <h4 className="font-bold text-2xl">Kelas Beasiswa </h4>
                     <p className="text-gray-300 group-hover:text-gray-600">Orientasi bagi penerima beasiswa</p>
-                    <Link href="/kelas-beasiswa" className="rounded-lg px-2 text-red-600 outline outline-1 mr-4 hover:bg-red-900 outline-red-900 hover:text-white  transition duration-500   ">
-                      Detail Program
-                    </Link>
+                    <div className="flex justify-center">
+                      <Link href="/kelas-beasiswa">
+                        <p className="rounded-lg px-2 text-red-600 border-2 border-red-900 mr-4 hover:bg-red-900  hover:text-white  transition duration-500 hover:scale-105 w-max text-center ">Detail Program</p>
+                      </Link>
+                    </div>
                   </li>
                   <li className=" my-3 lg:basis-1/4   p-4 hover:cursor-pointer hover:bg-opacity-0 bg-slate-900 text-white hover:text-black transition duration-300 rounded-xl shadow-lg group">
                     <h4 className="font-bold text-2xl">Kelas Reguler</h4>
                     <p className="text-md text-gray-300 group-hover:text-gray-600">Bahasa Jepang untuk umum</p>
-                    <Link href="/kelas-dasar" className="rounded-lg px-2 text-red-600 outline outline-1 mr-4 hover:bg-red-900 outline-red-900 hover:text-white  transition duration-500   ">
-                      Detail Program
-                    </Link>
+                    <div className="flex justify-center">
+                      <Link href="/kelas-dasar">
+                        <p className="rounded-lg px-2 text-red-600 border-2 border-red-900 mr-4 hover:bg-red-900  hover:text-white  transition duration-500 hover:scale-105 w-max text-center ">Detail Program</p>
+                      </Link>
+                    </div>
                   </li>
                   <li className=" my-3 lg:basis-1/4   p-4 hover:bg-opacity-0 bg-slate-900 text-white hover:text-black transition duration-300 rounded-xl shadow-lg  ">
                     <h4 className="font-bold text-2xl">Vacational School</h4>
@@ -204,6 +171,7 @@ export default function Home() {
           <ContactUs></ContactUs>
           <div></div>
           <SocialMedia></SocialMedia>
+          <IonIcon name="arrow-forward-outline" size="large" className="text-red-900 h-10"></IonIcon>
         </section>
       </div>
     </main>

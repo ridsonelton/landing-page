@@ -2,11 +2,11 @@ export function NewsComponent() {
   return (
     <section className="container mx-auto my-9 text-center ">
       <div className="">
-        <h2 className="text-3xl font-bold">News</h2>
-        <ul className=" flex flex-col md:flex-row justify-center items-center flex-wrap my-3 gap-4">
-          <li className="cursor-pointer w-[70vw] md:w-[25vw] text-sm md:text-base overflow-hidden  rounded-xl hover:opacity-50 shadow-lg shadow-gray-400 hover:scale-105">
+        <h2 className="text-4xl font-bold">News</h2>
+        <ul className="justify-items-center grid md:grid-cols-3 grid-cols-1 my-3 gap-4 justify-stretch">
+          <li className=" cursor-pointer w-[90vw] md:w-[27vw] lg:w-[22vw] text-sm md:text-base h-min overflow-hidden  rounded-xl hover:opacity-50 shadow-lg shadow-gray-400 hover:scale-105">
             <div>
-              <img className="" src="https://source.unsplash.com/500x302?education" alt="" width="100%" />
+              <img className="h-52" src="https://source.unsplash.com/500x300?book" alt="" width="100%" />
             </div>
             <div className="flex ">
               <div className="bg-red-700  p-2 justify-center items-center flex">
@@ -17,9 +17,9 @@ export function NewsComponent() {
               </div>
             </div>
           </li>
-          <li className="cursor-pointer w-[70vw] md:w-[25vw] text-sm md:text-base overflow-hidden  rounded-xl hover:opacity-50 shadow-lg shadow-gray-400 hover:scale-105">
+          <li className="cursor-pointer w-[90vw] md:w-[27vw] lg:w-[22vw] text-sm md:text-base h-min overflow-hidden  rounded-xl hover:opacity-50 shadow-lg shadow-gray-400 hover:scale-105">
             <div>
-              <img className="" src="https://source.unsplash.com/500x301?education" alt="" width="100%" />
+              <img className="h-52" src="https://source.unsplash.com/500x300?book" alt="" width="100%" />
             </div>
             <div className="flex ">
               <div className="bg-red-700  p-2 justify-center items-center flex">
@@ -30,9 +30,9 @@ export function NewsComponent() {
               </div>
             </div>
           </li>
-          <li className="cursor-pointer w-[70vw] md:w-[25vw] text-sm md:text-base overflow-hidden  rounded-xl hover:opacity-50 shadow-lg shadow-gray-400 hover:scale-105">
+          <li className="cursor-pointer w-[90vw] md:w-[27vw] lg:w-[22vw] text-sm md:text-base h-min overflow-hidden  rounded-xl hover:opacity-50 shadow-lg shadow-gray-400 hover:scale-105">
             <div>
-              <img className="" src="https://source.unsplash.com/500x300?education" alt="" width="100%" />
+              <img className="h-52" src="https://source.unsplash.com/500x300?book" alt="" width="100%" />
             </div>
             <div className="flex ">
               <div className="bg-red-700  p-2 justify-center items-center flex">
@@ -45,7 +45,7 @@ export function NewsComponent() {
           </li>
         </ul>
         <div className="text-center my-7">
-          <button className="hover:bg-red-900  hover:text-white outline outline-red-900 px-3 py-2 rounded-xl transition duration-500">Lihat semua</button>
+          <button className="hover:bg-red-900  hover:text-white border-2 border-red-900 px-3 py-2 rounded-xl transition duration-500 hover:scale-110">Lihat semua</button>
         </div>
       </div>
     </section>

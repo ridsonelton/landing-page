@@ -7,7 +7,7 @@ export default function KelasPersiapan() {
   return (
     <div>
       <section className="">
-        <div className="my-14 relative container mx-auto p-4 sm:p-0">
+        <div className="my-14 relative container mx-auto px-4 sm:p-0">
           <h1 className="font-bold text-2xl my-4 ">Kelas Persiapan test kemampuan Bahasa Jepang (N5/N4/N3) (1~3 bulan)</h1>
           <p>
             Merupakan kelas persiapan bahasa Jepang agar dapat lulus dalam test kemampuan bahasa Jepang (能力試験) level N5, N4, N3.

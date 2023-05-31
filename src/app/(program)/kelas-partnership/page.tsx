@@ -6,7 +6,7 @@ export default function KelasPartnership() {
   return (
     <div>
       <section className="">
-        <div className="my-14 relative mx-auto container p-4 sm:p-0">
+        <div className="my-14 relative mx-auto container px-4 sm:p-0">
           <h1 className="font-bold text-2xl my-4 "> Kelas Partnership (SMA/Akademi/Universitas)</h1>
           <p> Merupakan kelas tambahan bahasa Jepang dalam sekolah atau mata kuliah pilihan dalam kampus. Pelaksanaannya hanya pada institusi pendidikan yang telah memiliki kerja sama (MoU) dengan SMJC.</p>
           <p>
