@@ -18,7 +18,9 @@ import Consult from 'public/consult.svg'
 import Study from 'public/study.svg'
 import { NewsComponent } from './components/news'
 import Header from './components/Header'
-import { IonIcon } from '@ionic/react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPiggyBank } from '@fortawesome/free-solid-svg-icons'
+
 const background = {
   backgroundImage: `url(${hero.src})`,
   height: '100vh',
@@ -171,6 +173,7 @@ export default function Home() {
           <ContactUs></ContactUs>
           <div></div>
           <SocialMedia></SocialMedia>
+          <FontAwesomeIcon icon={faPiggyBank} />
         </section>
       </div>
     </main>
