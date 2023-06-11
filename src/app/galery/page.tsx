@@ -37,7 +37,7 @@ export default function GaleryPage() {
           <div className="grid sm:grid-cols-3 lg:grid-cols-4 grid-cols-1 gap-3 my-9  px-4">
             {images.map((image) => (
               <img
-                className="h-52 hover:opacity-70 cursor-pointer"
+                className="h-52 sm:hover:opacity-70 sm:cursor-pointer"
                 key={image.images}
                 src={image.images}
                 alt={image.alt}
@@ -51,7 +51,7 @@ export default function GaleryPage() {
           </div>
           {modal ? (
             <div>
-              <div className="fixed inset-0 z-10 bg-gray-900 bg-opacity-80">
+              <div className="hidden sm:block fixed inset-0 z-10 bg-gray-900 bg-opacity-80">
                 <div className=" flex justify-center relative">
                   <img className="mx-auto h-[30rem] mt-[20vh]" alt="" src={modalImage} width="50%"></img>
                   <Image className="absolute top-[15vh] bg-red-950 rounded-full cursor-pointer" onClick={() => setModal(false)} src={close} width={30} alt="close"></Image>
