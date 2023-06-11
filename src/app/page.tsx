@@ -57,8 +57,8 @@ export default function Home() {
                 </h1>
                 <p className="text-lg text-red-500 font-semibold">(Shizuoka Makassar Japanese Center)</p>
               </div>
-              <p className="text-center text-gray-700 mx-auto md:w-[55vw]">
-                Lembaga pendidikan bahasa Jepang yang bekerja profesional terpercaya sejak tahun 2016.
+              <p className="text-center px-2 sm:px-0 text-gray-700 mx-auto md:w-[55vw]">
+                Lembaga pendidikan bahasa Jepang yang terpercaya sejak tahun 2016.
                 <br /> SMJC saat ini tengah membangun hubungan kerja sama baik dalam negeri maupun luar negeri, khususnya lembaga/institusi/perusahaan di dalam propinsi Shizuoka Jepang. <br /> Lulusan SMJC adalah para siswa/mahasiswa yang
                 berasal dari berbagai propinsi di Indonesia dan sekarang sebagian besar sudah kuliah bahkan telah bekerja di Jepang.
               </p>

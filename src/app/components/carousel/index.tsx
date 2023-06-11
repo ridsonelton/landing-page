@@ -10,12 +10,12 @@ import { faArrowAltCircleLeft, faArrowAltCircleRight } from '@fortawesome/free-r
 
 export default function Carousel() {
   const images = {
-    img1: 'https://source.unsplash.com/500x300?book',
-    img2: 'https://source.unsplash.com/500x300?magic',
-    img3: 'https://source.unsplash.com/500x300?japan',
-    img4: 'https://source.unsplash.com/500x300?language',
-    img5: 'https://source.unsplash.com/500x300?math',
-    img6: 'https://source.unsplash.com/500x300?robot',
+    img1: 'https://drive.google.com/uc?id=1YnL8Xwm7M4fVAh8jch9s2W3DDGd3YM6o',
+    img2: 'https://drive.google.com/uc?id=1kOhgpBNWz_Rc9ZHpcCPZMzHrWJ72a-MA',
+    img3: 'https://drive.google.com/uc?id=1hUv4q0l1_PFVCCROet8qLTzm_tie_nsw',
+    img4: 'https://drive.google.com/uc?id=16o6lyjkFXcUUYgM0NPIhfqZQ_N4IENkL',
+    img5: 'https://drive.google.com/uc?id=1iRSDkjkfTtrqMo9oTjVmAIWD6N3ZsX_a',
+    img6: 'https://drive.google.com/uc?id=1k9ant16KYnr9hbSloaPJ8eb8oBYHqIJ9',
   }
   return (
     <Swiper

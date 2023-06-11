@@ -1,5 +1,8 @@
+'use clien'
+
 import logoB from 'public/logo-black.png'
 import Menu from 'public/bars.svg'
+import close from 'public/close.svg'
 import Image from 'next/image'
 import { useEffect, useRef, useState } from 'react'
 import ProgramHead from '@/app/(program)/programHead'
@@ -33,6 +36,9 @@ export default function Header({ headOn }: any) {
                 Program
               </li>
               <li className="mx-2  hover:bg-red-950 rounded-full p-2 transition cursor-pointer hover:text-white ">
+                <Link href="/galery">Galery</Link>
+              </li>
+              <li className="mx-2  hover:bg-red-950 rounded-full p-2 transition cursor-pointer hover:text-white ">
                 <Link href="#contact-us">Contact Us</Link>
               </li>
             </ul>
@@ -52,13 +58,17 @@ export default function Header({ headOn }: any) {
             <Image src={logoB} alt="smjc" width={40} className="" />
           </Link>
           <div onClick={() => setMenuBar(!menuBar)} className="text-white text-2xl border-2 p-1 rounded-md transition cursor-pointer">
-            <Image className={` ${menuBar ? 'rotate-90' : ''} transition duration-300`} src={Menu} width={25} alt="menubar"></Image>
+            {menuBar ? (
+              <Image className={` ${menuBar ? 'rotate-90' : ''} transition duration-300`} src={close} width={25} height={25} alt="menubar"></Image>
+            ) : (
+              <Image className={` ${menuBar ? 'rotate-90' : ''} transition duration-300`} src={Menu} width={25} height={25} alt="menubar"></Image>
+            )}
           </div>
         </div>
         <div className={`fixed bottom-0 top-14 z-30 left-0 right-0 transition duration-500 ${menuBar ? 'block' : 'hidden'} `}>
           <div onClick={() => setMenuBar(!menuBar)} className="fixed bottom-0 bg-opacity-50 bg-slate-900 top-14 z-20 left-0 right-0 backdrop-blur-sm"></div>
           <div className="bg-gray-200 h-[35vh] z-30 absolute right-0 left-0">
-            <ul className="p-6 font-semibold ">
+            <ul className="p-6 font-semibold flex flex-col">
               <li>
                 Program
                 <ul className="ml-3 font-normal flex flex-col">
@@ -88,6 +98,11 @@ export default function Header({ headOn }: any) {
                     </Link>
                   </li>
                 </ul>
+              </li>
+              <li className="inline-block">
+                <Link onClick={() => setMenuBar(!menuBar)} className="cursor-pointer hover:opacity-50" href="/galery">
+                  Galery
+                </Link>
               </li>
               <li className="inline-block">
                 <Link onClick={() => setMenuBar(!menuBar)} className="cursor-pointer hover:opacity-50" href="#contact-us">
