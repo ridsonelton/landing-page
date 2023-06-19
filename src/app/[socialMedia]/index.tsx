@@ -18,8 +18,8 @@ export default function SocialMedia() {
         </div>
         <div className="flex flex-col justify-center items-center w-40">
           <Image src={clock} width={50} height={50} alt="address"></Image>
-          <p className="text-center text-sm">Mon-Fry 08:00-1700</p>
-          <p className="text-center text-sm">Saturday and Monday Closed</p>
+          <p className="text-center text-sm">Buka senin-jumat 08:00-1700</p>
+          <p className="text-center text-sm">Tutup sabtu dan minggu</p>
         </div>
         <div className="flex flex-col justify-center items-center w-40">
           <Image src={tele} width={50} height={50} alt="address"></Image>
