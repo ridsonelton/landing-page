@@ -77,6 +77,48 @@ export default function KelasPrecollege() {
           <PriceCard title={'paket B'} price={'5,500'} pertemuan={'50X pertemuan'} li1={'Senin-Jumat(3 bulan)'} li2={'90 Menit/pertemuan '} li3={'Tersedia kelas Online & Offline'}></PriceCard>
         </div>
       </section>
+      <section className="px-4 sm:px-0 mx-auto container py-3">
+        <h6 className="font-semibold">Biaya Ke Jepang:</h6>
+
+        <p className="my-2">Total biaya yang diperlukan untuk bisa ke Jepang sebesar ¥595.000 (Rp 65.450.000 dengan Kurs ¥1 = Rp. 110)</p>
+        <p className="my-2">
+          Rincian biaya diatas adalah uang sekolah di semester pertama sebesar ¥427.000, dan assuransi kesehatan,biaya hidup,dll di estimasi sebesar ¥168.000. (berdasarkan survey siswa yg telah ada di Jepang)
+          <br /> Adapun sisanya biaya semester kedua bisa dibayarkan kemudian.
+        </p>
+        <p className="my-2">Biaya2 yang dibutuhkan adalah dengan perincian sebagai berikut</p>
+
+        <div>
+          <h6 className="font-semibold">A. Uang Sekolah </h6>
+          <h6 className="font-semibold">Semester Pertama</h6>
+          <ul className="list-disc list-inside">
+            <li>Formulir Pendaftaran ¥25.000 </li>
+            <li>Admission Fee ¥60.000</li>
+            <li>Material Fee ¥21.000</li>
+            <li>Facility Fee ¥21.000</li>
+            <li>Tuition Fee (6 months) ¥300.000</li>
+            <li>Total ¥427.000</li>
+          </ul>
+          <h6 className="font-semibold">Semester Kedua</h6>
+          <p>Tuition Fee (6 months) : ¥300.000</p>
+        </div>
+        <div>
+          <h6 className="font-semibold">B. Living Cost/Akomodasi/Dll</h6>
+
+          <ul className="list-disc list-inside">
+            <li>Apartment (3 bulan) ¥60.000</li>
+            <li>Asuransi (1 tahun) ¥17.000</li>
+            <li>Air/Listrik/Gas (3 bulan) ¥30.000</li>
+            <li>Belanja/Dapur ¥30.000</li>
+            <li>Sepeda (utk transportasi) ¥20.000</li>
+            <li>Biaya HP (Estimasi) ¥6.000</li>
+            <li>Dll ¥5.000</li>
+            <li>Total ¥168.000 </li>
+          </ul>
+        </div>
+        <p className="italic text-sm mb-3 my-2">
+          <span className="font-semibold">Note : </span> Setelah 3 bulan di jepang, rata2 siswa mampu membiayai hidupnya karena diperkenankan bekerja part time sebanyak 28 jam per minggu.
+        </p>
+      </section>
     </div>
   )
 }
