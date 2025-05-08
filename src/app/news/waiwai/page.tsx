@@ -7,8 +7,8 @@ export default function Waiwai() {
         <h6 className="font-light text-gray-600">by Ulfa | July 16, 2023(latepost) | Alumni</h6>
         <p className="my-3">
           Para alumni SMJC yang mewakili Indonesia pada festival kebudayaan WaiWai World Fair (WWF) 2021 di kota Shizuoka pada hari minggu,28 November 2021. <br />
-          Tampak Duta dalam foto besar Indonesia bersama Ibu dan segenap staff kedutaan besar RI berfoto bersama para siswa alumni SMJC (Penari: Jelita, Rumante, Safnat; Pengurus Ikatan Alumni : Smirna, Grace ) yang menari tarian
-          tradisional Pagellu (sebuah tarian suku Toraja). <br /> Kami bangga dan tersanjung bisa diberi kesempatan untuk memperkenalkan budaya Indonesia di setiap event2 budaya di Jepang khususnya dalam propinsi Shizuoka.
+          Tampak Duta Besar Indonesia untuk Jepang Bapak Heri Akhmadi beserta ibu dan segenap staff kedutaan besar RI berfoto bersama para siswa alumni SMJC (Penari: Jelita, Rumante, Safnat; Pengurus Ikatan Alumni : Smirna, Grace ) yang
+          menari tarian tradisional Pagellu (sebuah tarian suku Toraja). <br /> Kami bangga dan tersanjung bisa diberi kesempatan untuk memperkenalkan budaya Indonesia di setiap event2 budaya di Jepang khususnya dalam propinsi Shizuoka.
         </p>
       </div>
     </div>

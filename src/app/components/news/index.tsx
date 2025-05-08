@@ -6,7 +6,7 @@ export function NewsComponent() {
       <div className="">
         <h2 className="text-4xl my-5 font-bold">NEWS</h2>
         <ul className="justify-items-center grid lg:grid-cols-3 grid-cols-1 my-3 gap-4 justify-stretch">
-          <li className=" cursor-pointer w-[80vw]  lg:w-[30vw] xl:w-[27vw] text-sm md:text-base h-min overflow-hidden  rounded-xl hover:opacity-50 shadow-lg shadow-gray-400 hover:scale-105">
+          <li className=" cursor-pointer w-[80vw]  lg:w-[30vw] xl:w-[25vw] text-sm md:text-base h-min overflow-hidden  rounded-xl hover:opacity-50 shadow-lg shadow-gray-400 hover:scale-105">
             <Link href="/news/new-class-opening">
               <div>
                 <img className="h-52" src="https://drive.google.com/uc?id=1oDd8Jf_e6ZulJ7hpfotK4trTKBABhRa-" alt="" width="100%" />
@@ -21,7 +21,7 @@ export function NewsComponent() {
               </div>
             </Link>
           </li>
-          <li className="cursor-pointer w-[80vw]  lg:w-[30vw] xl:w-[27vw] text-sm md:text-base h-min overflow-hidden  rounded-xl hover:opacity-50 shadow-lg shadow-gray-400 hover:scale-105">
+          <li className="cursor-pointer w-[80vw]  lg:w-[30vw] xl:w-[25vw] text-sm md:text-base h-min overflow-hidden  rounded-xl hover:opacity-50 shadow-lg shadow-gray-400 hover:scale-105">
             <Link href="/news/mahasiswa-program-partnership">
               <div>
                 <img className="h-52" src="https://drive.google.com/uc?id=1iJUiHPJGdRPFoodeXgm5Ak147Qt2A_IL" alt="" width="100%" />
@@ -36,7 +36,7 @@ export function NewsComponent() {
               </div>
             </Link>
           </li>
-          <li className="cursor-pointer w-[80vw]  lg:w-[30vw] xl:w-[27vw] text-sm md:text-base h-min overflow-hidden  rounded-xl hover:opacity-50 shadow-lg shadow-gray-400 hover:scale-105">
+          <li className="cursor-pointer w-[80vw]  lg:w-[30vw] xl:w-[25vw] text-sm md:text-base h-min overflow-hidden  rounded-xl hover:opacity-50 shadow-lg shadow-gray-400 hover:scale-105">
             <Link href="/news/waiwai">
               <div>
                 <img className="h-52" src="https://drive.google.com/uc?id=1GxNe9TyIJ2R-Bad0Xz3aOii80fyzF6O4" alt="" width="100%" />
