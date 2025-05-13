@@ -1,7 +1,10 @@
+import waiwai from "../../gallery/waiwai.jpg"
+import Image from 'next/image'
+
 export default function Waiwai() {
   return (
     <div className="">
-      <img className="lg:h-[60vh] sm:h-[70%] mx-auto" src="https://drive.google.com/uc?id=1GxNe9TyIJ2R-Bad0Xz3aOii80fyzF6O4" alt="" width="100%" />
+      <Image className="lg:h-[60vh] sm:h-[70%] mx-auto" src={waiwai} alt="waiwai" />
       <div>
         <h3 className="font-semibold sm:text-3xl text-xl mt-6 my-2">Alumni SMJC di Festival Waiwai World Fair 2021</h3>
         <h6 className="font-light text-gray-600">by Ulfa | July 16, 2023(latepost) | Alumni</h6>

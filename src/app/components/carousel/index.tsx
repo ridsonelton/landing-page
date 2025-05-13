@@ -3,6 +3,7 @@ import 'swiper/css'
 import 'swiper/css/effect-coverflow'
 import 'swiper/css/pagination'
 import 'swiper/css/navigation'
+import photo1 from '../../gallery/photo1.jpg'
 
 import { EffectCoverflow, Pagination, Navigation, Autoplay, A11y } from 'swiper'
 import { FontAwesomeIcon as Icon } from '@fortawesome/react-fontawesome'
@@ -10,12 +11,12 @@ import { faArrowAltCircleLeft, faArrowAltCircleRight } from '@fortawesome/free-r
 
 export default function Carousel() {
   const images = {
-    img1: 'https://drive.google.com/uc?id=1YnL8Xwm7M4fVAh8jch9s2W3DDGd3YM6o',
-    img2: 'https://drive.google.com/uc?id=1kOhgpBNWz_Rc9ZHpcCPZMzHrWJ72a-MA',
-    img3: 'https://drive.google.com/uc?id=1hUv4q0l1_PFVCCROet8qLTzm_tie_nsw',
-    img4: 'https://drive.google.com/uc?id=16o6lyjkFXcUUYgM0NPIhfqZQ_N4IENkL',
-    img5: 'https://drive.google.com/uc?id=1iRSDkjkfTtrqMo9oTjVmAIWD6N3ZsX_a',
-    img6: 'https://drive.google.com/uc?id=1k9ant16KYnr9hbSloaPJ8eb8oBYHqIJ9',
+    img1: '../../gallery/photo1.jpg',
+    img2: '../../gallery/photo1.jpg',
+    img3: '../../gallery/photo1.jpg',
+    img4: '../../gallery/photo1.jpg',
+    img5: '../../gallery/photo1.jpg',
+    img6: '../../gallery/photo1.jpg',
   }
   return (
     <Swiper

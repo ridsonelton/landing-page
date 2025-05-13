@@ -4,10 +4,25 @@ import Header from '../components/Header'
 import Image from 'next/image'
 import { useState } from 'react'
 import close from 'public/close.svg'
+import photo1 from '../gallery/photo1.jpg'
+import photo2 from '../gallery/photo2.jpg'
+import photo3 from '../gallery/photo3.jpg'
+import photo4 from '../gallery/photo4.jpg'
+import photo5 from '../gallery/photo5.jpg'
+import photo6 from '../gallery/photo6.jpg'
+import photo7 from '../gallery/photo7.jpg'
+import photo8 from '../gallery/photo8.jpg'
+import photo9 from '../gallery/photo9.jpg'
+import photo10 from '../gallery/photo10.jpg'
+import photo11 from '../gallery/photo11.jpg'
+import photo12 from '../gallery/photo12.jpg'
+import photo13 from '../gallery/photo13.jpg'
+import photo14 from '../gallery/photo14.jpg'
+import photo15 from '../gallery/photo15.jpg'
 
 export default function GaleryPage() {
   const images = [
-    { images: 'https://drive.google.com/uc?id=1YnL8Xwm7M4fVAh8jch9s2W3DDGd3YM6o', alt: 'smjc1' },
+    { images: "https://drive.google.com/uc?export=view&id=1nXdodffNEm3-grqd-ZHx89w5YFbYn1GK", alt: 'smjc1' },
     { images: 'https://drive.google.com/uc?id=1kOhgpBNWz_Rc9ZHpcCPZMzHrWJ72a-MA', alt: 'smjc2' },
     { images: 'https://drive.google.com/uc?id=1hUv4q0l1_PFVCCROet8qLTzm_tie_nsw', alt: 'smjc3' },
     { images: 'https://drive.google.com/uc?id=16o6lyjkFXcUUYgM0NPIhfqZQ_N4IENkL', alt: 'smjc4' },

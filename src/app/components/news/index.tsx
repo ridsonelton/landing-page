@@ -1,3 +1,7 @@
+import partnership from "../../gallery/partnership.jpg"
+import newClass from "../../gallery/new-class.jpg"
+import waiwai from "../../gallery/waiwai.jpg"
+import Image from 'next/image'
 import Link from 'next/link'
 
 export function NewsComponent() {
@@ -9,7 +13,7 @@ export function NewsComponent() {
           <li className=" cursor-pointer w-[80vw]  lg:w-[30vw] xl:w-[25vw] text-sm md:text-base h-min overflow-hidden  rounded-xl hover:opacity-50 shadow-lg shadow-gray-400 hover:scale-105">
             <Link href="/news/new-class-opening">
               <div>
-                <img className="h-52" src="https://drive.google.com/uc?id=1oDd8Jf_e6ZulJ7hpfotK4trTKBABhRa-" alt="" width="100%" />
+                <Image className="h-52" src={newClass} alt="newClass"/>
               </div>
               <div className="flex ">
                 <div className="bg-red-700  p-2 justify-center items-center flex">
@@ -24,7 +28,7 @@ export function NewsComponent() {
           <li className="cursor-pointer w-[80vw]  lg:w-[30vw] xl:w-[25vw] text-sm md:text-base h-min overflow-hidden  rounded-xl hover:opacity-50 shadow-lg shadow-gray-400 hover:scale-105">
             <Link href="/news/mahasiswa-program-partnership">
               <div>
-                <img className="h-52" src="https://drive.google.com/uc?id=1iJUiHPJGdRPFoodeXgm5Ak147Qt2A_IL" alt="" width="100%" />
+                 <Image className="h-52" src={partnership} alt="newClass"/>
               </div>
               <div className="flex ">
                 <div className="bg-red-700  p-2 justify-center items-center flex">
@@ -39,7 +43,7 @@ export function NewsComponent() {
           <li className="cursor-pointer w-[80vw]  lg:w-[30vw] xl:w-[25vw] text-sm md:text-base h-min overflow-hidden  rounded-xl hover:opacity-50 shadow-lg shadow-gray-400 hover:scale-105">
             <Link href="/news/waiwai">
               <div>
-                <img className="h-52" src="https://drive.google.com/uc?id=1GxNe9TyIJ2R-Bad0Xz3aOii80fyzF6O4" alt="" width="100%" />
+                 <Image className="h-52" src={waiwai} alt="newClass"/>
               </div>
               <div className="flex ">
                 <div className="bg-red-700  p-2 justify-center items-center flex">

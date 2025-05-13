@@ -1,7 +1,10 @@
+import partnership from "../../gallery/partnership.jpg"
+import Image from 'next/image'
+
 export default function MahasiswaProgramPartnership() {
   return (
     <div className="">
-      <img className="lg:h-[60vh] sm:h-[70%] mx-auto" src="https://drive.google.com/uc?id=1iJUiHPJGdRPFoodeXgm5Ak147Qt2A_IL" alt="" width="100%" />
+      <Image src={partnership}  className="lg:h-[60vh] sm:h-[70%] mx-auto" alt="partnership" />
       <div>
         <h3 className="font-semibold sm:text-3xl text-xl mt-6 my-2">Mahasiswa Program Partnership</h3>
         <h6 className="font-light text-gray-600">by Ulfa | July 16, 2023 | Semua kelas Bahasa Jepang</h6>

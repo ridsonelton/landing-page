@@ -1,7 +1,10 @@
+import newClass from "../../gallery/new-class.jpg"
+import Image from 'next/image'
+
 export default function NewClassOpening() {
   return (
     <div className="">
-      <img className="lg:h-[60vh] sm:h-[70%] mx-auto" src="https://drive.google.com/uc?id=1oDd8Jf_e6ZulJ7hpfotK4trTKBABhRa-" alt="" width="100%" />
+      <Image className="lg:h-[60vh] sm:h-[70%] mx-auto" src={newClass} alt="new-class"/>
       <div>
         <h3 className="font-semibold sm:text-3xl text-xl mt-6 my-2">SMJC Buka Kelas Baru Untuk Bulan July 2023</h3>
         <h6 className="font-light text-gray-600">by Juan-red | Mei 27, 2023 | Semua kelas Bahasa Jepang</h6>
