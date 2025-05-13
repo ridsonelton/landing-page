@@ -22,21 +22,21 @@ import photo15 from '../gallery/photo15.jpg'
 
 export default function GaleryPage() {
   const images = [
-    { images: "https://drive.google.com/uc?export=view&id=1nXdodffNEm3-grqd-ZHx89w5YFbYn1GK", alt: 'smjc1' },
-    { images: 'https://drive.google.com/uc?id=1kOhgpBNWz_Rc9ZHpcCPZMzHrWJ72a-MA', alt: 'smjc2' },
-    { images: 'https://drive.google.com/uc?id=1hUv4q0l1_PFVCCROet8qLTzm_tie_nsw', alt: 'smjc3' },
-    { images: 'https://drive.google.com/uc?id=16o6lyjkFXcUUYgM0NPIhfqZQ_N4IENkL', alt: 'smjc4' },
-    { images: 'https://drive.google.com/uc?id=1iRSDkjkfTtrqMo9oTjVmAIWD6N3ZsX_a', alt: 'smjc5' },
-    { images: 'https://drive.google.com/uc?id=1nXdodffNEm3-grqd-ZHx89w5YFbYn1GK', alt: 'smjc6' },
-    { images: 'https://drive.google.com/uc?id=17GN5NJD2aVZg_BYhMN63ge1wgCnNA7UB', alt: 'smjc6' },
-    { images: 'https://drive.google.com/uc?id=1PUMmpOdDy6CVEw7M2fjvx9_xeRCOwOol', alt: 'smjc6' },
-    { images: 'https://drive.google.com/uc?id=1hFJ4525PworyrssxJtoFsyaG6IAv-I8B', alt: 'smjc6' },
-    { images: 'https://drive.google.com/uc?id=1gTP8iqa0vnU0cNxI-_xmHXGxx6q2qCfp', alt: 'smjc6' },
-    { images: 'https://drive.google.com/uc?id=1Mbv_GXJuDOvMh-dHxlndU95zPyU7MwDm', alt: 'smjc6' },
-    { images: 'https://drive.google.com/uc?id=10YEuvjatIDgoshlqdMpRJbWnY-Yqui25', alt: 'smjc6' },
-    { images: 'https://drive.google.com/uc?id=1DF8jAmTtc4trRld7V4118ECIyULWny71', alt: 'smjc6' },
-    { images: 'https://drive.google.com/uc?id=1hE2C7jbPo4mmOgcHQMRvr6-EMe5K05ri', alt: 'smjc6' },
-    { images: 'https://drive.google.com/uc?id=1k9ant16KYnr9hbSloaPJ8eb8oBYHqIJ9', alt: 'smjc6' },
+    { images: photo1, alt: 'smjc1' },
+    { images: photo2, alt: 'smjc2' },
+    { images: photo3, alt: 'smjc3' },
+    { images: photo4, alt: 'smjc4' },
+    { images: photo5, alt: 'smjc5' },
+    { images: photo6, alt: 'smjc6' },
+    { images: photo7, alt: 'smjc6' },
+    { images: photo8, alt: 'smjc6' },
+    { images: photo9, alt: 'smjc6' },
+    { images: photo10, alt: 'smjc6' },
+    { images: photo11, alt: 'smjc6' },
+    { images: photo12, alt: 'smjc6' },
+    { images: photo13, alt: 'smjc6' },
+    { images: photo14, alt: 'smjc6' },
+    { images: photo15, alt: 'smjc6' },
   ]
 
   const [modal, setModal] = useState(false)
@@ -53,13 +53,13 @@ export default function GaleryPage() {
             {images.map((image) => (
               <img
                 className="h-52 sm:hover:opacity-70 sm:cursor-pointer"
-                key={image.images}
-                src={image.images}
+                key={image.images.src}
+                src={image.images.src}
                 alt={image.alt}
                 width="100%"
                 onClick={() => {
                   setModal(!modal)
-                  setModalImage(image.images)
+                  setModalImage(image.images.src)
                 }}
               ></img>
             ))}
