@@ -11,10 +11,10 @@ export default function SocialMedia() {
     <div>
       <div className="flex sm:flex-row flex-col gap-3 content-center justify-center sm:gap-9 my-4 flex-wrap items-start">
         <div className="flex flex-col justify-center items-center w-40 ">
-          <a href="https://www.google.co.jp/maps/place/Grand+Central+BTP/@-5.1313809,119.4996753,18.05z/data=!4m10!1m2!2m1!1sRUKO+GRAND+SENTRAL+BTP+No.2B+Tamalanrea,+Kec.+Tamalanrea,+Kota+Makassar,+Sulawesi+Selatan,%C2%A0Indonesia%C2%A090245!3m6!1s0x2dbefdea2853fd77:0x29e8c749979a5ac9!8m2!3d-5.1312031!4d119.501062!15sCmxSVUtPIEdSQU5EIFNFTlRSQUwgQlRQIE5vLjJCIFRhbWFsYW5yZWEsIEtlYy4gVGFtYWxhbnJlYSwgS290YSBNYWthc3NhciwgU3VsYXdlc2kgU2VsYXRhbizCoEluZG9uZXNpYcKgOTAyNDWSARFob3VzaW5nX2F1dGhvcml0eeABAA!16s%2Fg%2F11gyvr8z5d">
+          <a href="https://maps.app.goo.gl/B2uS6hzQCmNFzfCg6">
             <Image src={adress} width={50} height={50} alt="address"></Image>
           </a>
-          <p className="text-center text-sm ">Ruko Grand Sentral BTP, Makassar </p>
+          <p className="text-center text-sm ">jl.sermani no.10, Makassar </p>
         </div>
         <div className="flex flex-col justify-center items-center w-40">
           <Image src={clock} width={50} height={50} alt="address"></Image>
@@ -24,6 +24,7 @@ export default function SocialMedia() {
         <div className="flex flex-col justify-center items-center w-40">
           <Image src={tele} width={50} height={50} alt="address"></Image>
           <p className="text-center text-sm">+62 821-9400-6678</p>
+          <p className="text-center text-sm">+62 818-0944-7374(untuk wilayah Jakarta/Bandung)</p>
         </div>
       </div>
 
